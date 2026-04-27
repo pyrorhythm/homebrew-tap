@@ -4,13 +4,13 @@ class Moonshine < Formula
   license "MIT"
 
   on_arm do
-    url "https://github.com/pyrorhythm/moonshine/releases/download/v0.1.2/moonshine_0.1.2_macOS_arm64.tar.gz"
-    sha256 "226f85fb01ac3bb7f846ec65ddb3bcf630ee5a16c634cdc62e673cb0cb0b1e82"
+    url "https://github.com/pyrorhythm/moonshine/releases/download/v0.2.0/moonshine_0.2.0_macOS_arm64.tar.gz"
+    sha256 "95ca0fd353b54442bd66d19fb87851a5415c7daeb31250bb31290be3bdee48f0"
   end
 
   on_intel do
-    url "https://github.com/pyrorhythm/moonshine/releases/download/v0.1.2/moonshine_0.1.2_macOS_x86_64.tar.gz"
-    sha256 "d5d4f6a1ab98c52fce90a3a8e593616ce9c78722a667120719bd5f467190dd04"
+    url "https://github.com/pyrorhythm/moonshine/releases/download/v0.2.0/moonshine_0.2.0_macOS_x86_64.tar.gz"
+    sha256 "739585ff048fe71d3ac02b914edaec0f1679afdee7d924ad0fe600194d6ce504"
   end
 
   def install
@@ -25,6 +25,6 @@ class Moonshine < Formula
   end
 
   test do
-    assert_match version.to_s, shell_output("#{bin}/moonshine --version")
+    assert_match version.to_s, shell_output("#{bin}/moonshine version")
   end
 end
