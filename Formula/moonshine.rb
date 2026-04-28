@@ -2,6 +2,8 @@ class Moonshine < Formula
   desc "Missing declarative package manager aggregator for macOS"
   homepage "https://pyrorhythm.dev/moonshine"
   license "MIT"
+  version "v0.2.0"
+  version_scheme 1
 
   on_arm do
     url "https://github.com/pyrorhythm/moonshine/releases/download/v0.2.0/moonshine_0.2.0_macOS_arm64.tar.gz"
