@@ -3,7 +3,7 @@ class Moonshine < Formula
   homepage "https://pyrorhythm.dev/moonshine"
   license "MIT"
   version "v0.3.0"
-  version_schema 1
+  version_scheme 1
   
   on_arm do
     url "https://github.com/pyrorhythm/moonshine/releases/download/v0.3.0/moonshine_0.3.0_macOS_arm64.tar.gz"
