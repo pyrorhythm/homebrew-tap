@@ -20,11 +20,11 @@ class Moonshine < Formula
     generate_completions_from_executable(
       bin/"moonshine",
       "completion",
-      shells: [:bash, :zsh, :fish, :pwsh]
+      shells: [:bash, :zsh, :fish]
     )
   end
 
   test do
-    assert_match version.to_s, shell_output("#{bin}/moonshine version")
+    assert_match version.to_s, shell_output("#{bin}/moonshine --version")
   end
 end
